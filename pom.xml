@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -19,6 +20,7 @@
     <junit-jupiter-api.version>5.10.1</junit-jupiter-api.version>
     <selenium-java.version>4.16.1</selenium-java.version>
     <appium.version>9.0.0</appium.version>
+    <webdrivermanager.version>5.6.3</webdrivermanager.version>
     <hamcrest.version>2.2</hamcrest.version>
     <extentreports.version>5.1.1</extentreports.version>
   </properties>
@@ -39,6 +41,11 @@
       <groupId>io.appium</groupId>
       <artifactId>java-client</artifactId>
       <version>${appium.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>${webdrivermanager.version}</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
