@@ -13,6 +13,9 @@ buildNumber.properties
 # IntelliJ Files
 .idea
 
+# Allure report directory
+.allure
+
 # Eclipse m2e generated files
 # Eclipse Core
 .project
