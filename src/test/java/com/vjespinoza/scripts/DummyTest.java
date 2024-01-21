@@ -10,7 +10,13 @@ public class DummyTest {
 
   @Test
   public void dummyTestOne() {
-    logger.info("dummyTestOne");
+    logger.info("##### dummyTestOne");
+    assert true;
+  }
+
+  @Test
+  public void dummyTestTwo() {
+    logger.info("##### dummyTestTwo");
     assert true;
   }
 }
