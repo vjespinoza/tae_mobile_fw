@@ -22,9 +22,21 @@
     <appium.version>9.0.0</appium.version>
     <webdrivermanager.version>5.6.3</webdrivermanager.version>
     <hamcrest.version>2.2</hamcrest.version>
-    <extentreports.version>5.1.1</extentreports.version>
+    <allure.version>2.25.0</allure.version>
     <slf4j.version>2.0.11</slf4j.version>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-bom</artifactId>
+        <version>${allure.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <dependency>
@@ -55,9 +67,9 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.aventstack</groupId>
-      <artifactId>extentreports</artifactId>
-      <version>${extentreports.version}</version>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-junit5</artifactId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
