@@ -3,13 +3,9 @@ package com.vjespinoza.scripts;
 import io.qameta.allure.Allure;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @DisplayName("Yahoooo")
-public class FakeTest {
-
-  Logger logger = LoggerFactory.getLogger(FakeTest.class);
+public class FakeTest extends BaseTest {
 
   @Test
   public void fakeTestOne() {
