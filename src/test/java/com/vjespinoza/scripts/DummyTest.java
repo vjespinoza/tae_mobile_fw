@@ -1,6 +1,5 @@
 package com.vjespinoza.scripts;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class DummyTest extends BaseTest {
