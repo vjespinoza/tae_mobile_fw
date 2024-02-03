@@ -13,4 +13,6 @@
 ### Generating Allure reports:
 
 * Generate report file: `mvn allure:report`
-* Start report server (Localhost): `mvn allure:serve` 
+* Start report server (Localhost): `mvn allure:serve`
+* Running test and generating report: `mvn clean test -Dtest=ClassName && mvn allure:report
+  `
